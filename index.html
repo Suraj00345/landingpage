@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trello Style Layout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Trello" />
+        <div class="logo-text">
+          <div style="font-size: 30px; font-weight: bold; color: #172b4d">
+            ORGANIVO
+          </div>
+        </div>
+      </div>
+
+      <!-- Checkbox for hamburger toggle -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Menu -->
+      <div class="menu">
+        <a href="#">Features</a>
+        <a href="#">Solutions</a>
+        <a href="#">Resources</a>
+      </div>
+
+      <div class="right">
+        <a href="#">Log in</a>
+        <a href="#" class="btn">Get Trello for free</a>
+      </div>
+    </nav>
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Capture, organize, and tackle your to-dos from anywhere.</h1>
+        <p>
+          Escape the clutter and chaos—unleash your productivity with Trello.
+        </p>
+        <div class="form">
+          <input type="email" placeholder="Email" />
+          <button>Sign up – it’s free!</button>
+        </div>
+        <small
+          >By entering my email, I acknowledge the
+          <a href="#">Atlassian Privacy Policy</a></small
+        ><br />
+        <a href="#" class="watch">Watch video ▶</a>
+      </div>
+      <div class="hero-image">
+        <video
+          src="./assets/updatedhero-mobile-final.mp4"
+          autoplay
+          muted
+          playsinline
+        ></video>
+      </div>
+    </div>
+
+    <!-- Intro Section -->
+    <section class="section">
+      <h2>OGANIVO PRO+</h2>
+      <h1>Your productivity powerhouse</h1>
+      <p>
+        Stay organized and efficient with Inbox, Boards, and Planner. Every
+        to-do, idea, or responsibility—no matter how small—finds its place,
+        keeping you at the top of your game.
+      </p>
+    </section>
+
+    <!-- Tabs -->
+    <input type="radio" name="section" id="inbox" checked />
+    <input type="radio" name="section" id="boards" />
+    <input type="radio" name="section" id="planner" />
+
+    <div class="container">
+      <!-- Left Menu -->
+      <div class="menu1">
+        <label for="inbox">
+          <h3>Inbox</h3>
+          <p>
+            When it’s on your mind, it goes in your Inbox. Capture to-dos
+            anytime.
+          </p>
+        </label>
+        <label for="boards">
+          <h3>Boards</h3>
+          <p>
+            Your to-do list may be long, but it can be manageable! Keep tabs on
+            everything.
+          </p>
+        </label>
+        <label for="planner">
+          <h3>Planner</h3>
+          <p>Drag, drop, get it done. Snap tasks into your calendar.</p>
+        </label>
+      </div>
+
+      <!-- Right Content -->
+      <div class="content">
+        <div id="inbox-content" class="section-content">
+          <img src="./assets/1st.png" alt="Inbox Page" />
+        </div>
+        <div id="boards-content" class="section-content">
+          <img src="./assets/2nd.png" alt="Boards Page" />
+        </div>
+        <div id="planner-content" class="section-content">
+          <img src="./assets/3rd.png" alt="Planner Page" />
+        </div>
+      </div>
+    </div>
+
+    <section class="email-section">
+      <!-- Section Heading -->
+      <div class="section-header">
+        <h2>From message to action</h2>
+        <p>
+          Quickly turn communication from your favorite apps into to-dos,<br />
+          keeping all your discussions and tasks organized in one place.
+        </p>
+      </div>
+
+      <!-- Content Row -->
+      <div class="content-row">
+        <!-- Left side image -->
+        <div class="image-box">
+          <img src="./assets/email magic.webp" alt="Inbox Mockup" />
+        </div>
+
+        <!-- Right side text -->
+        <div class="content">
+          <h4>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              alt="Email Logo"
+            />
+            Email Magic
+          </h4>
+          <p>
+            Easily turn your emails into to-dos! Just forward them to your
+            Trello Inbox, and they’ll be transformed by Atlassian Intelligence
+            (AI) into organized to-dos with all the links you need.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <!-- Left Side -->
+        <div class="left-box">
+          <h4>
+            <img src="./assets/calender_icon.png" alt="icon" />
+            Message App Sorcery
+          </h4>
+          <p>
+            Need to follow up on a message from Slack or Microsoft Teams? Send
+            it directly to your Trello board! Your favorite app interface lets
+            you save messages that appear in your Trello Inbox with AI-generated
+            summaries and links.
+          </p>
+        </div>
+
+        <!-- Right Side -->
+        <div class="right-box">
+          <img src="./assets/msg_app.webp" alt="Mockup" />
+        </div>
+      </div>
+    </section>
+
+    <section class="do-more-with-trello">
+      <h2>WORK SMARTER</h2>
+      <h1>Do more with Organivo</h1>
+      <p>
+        Customize the way you organize with easy integrations, automation, and
+        mirroring of your to-dos across multiple locations.
+      </p>
+    </section>
+
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="./assets/puzzle image 1.webp" alt="Integrations" />
+        <h3>Integrations</h3>
+        <p>
+          Connect the apps you are already using into your Trello workflow or
+          add a Power-Up to fine-tune your specific needs.
+        </p>
+        <button>Browse Integrations</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="./assets/settings image.jpg" alt="Automation" />
+        <h3>Automation</h3>
+        <p>
+          No-code automation is built into every Trello board. Focus on the work
+          that matters most and let the robots do the rest.
+        </p>
+        <button>Get to know Automation</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="./assets/card image.png" alt="Card mirroring" />
+        <h3>Card mirroring</h3>
+        <p>
+          View all your to-dos from multiple boards in one place. Mirror a card
+          to keep track of work wherever you need it!
+        </p>
+        <button>Compare plans</button>
+      </div>
+    </div>
+
+    <div class="carousel-container">
+      <div class="slider">
+       
+
+        <div class="slider-track" id="sliderTrack">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div class="card-left">
+              <p>
+                [Trello is] great for simplifying complex processes. As a
+                manager, I can chunk [processes] down into bite-sized pieces for
+                my team and then delegate that out, but still keep a bird's-eye
+                view.
+              </p>
+              <div class="author">
+                <div class="author-line"></div>
+                <strong>Joey Rosenberg</strong><br />
+                Global Leadership Director at Women Who Code
+              </div>
+              <div class="logo">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/free-ptc-1-461807.png"
+                />
+                <span>Women Who Code</span>
+              </div>
+              <div class="read-link"><a href="#">Read the story</a></div>
+            </div>
+            <div class="card-right">
+              <h2>
+                75% of organizations report Trello delivers value to their
+                business within 30 days
+              </h2>
+              <div class="survey-link">
+                <a href="#">Trello TechValidate Survey</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div class="card-left">
+              <p>
+                Whether someone is in the office, working from home, or working
+                on-site with a client, everyone can share context and
+                information through Trello.
+              </p>
+              <div class="author">
+                <div class="author-line"></div>
+                <strong>Sumeet Moghe</strong><br />
+                Product Manager at ThoughtWorks
+              </div>
+              <div class="logo">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/free-ptc-1-461807.png"
+                />
+                <span>ThoughtWorks</span>
+              </div>
+              <div class="read-link"><a href="#">Read the story</a></div>
+            </div>
+            <div class="card-right">
+              <h2>81% of customers choose Trello for its ease of use.</h2>
+              <div class="survey-link">
+                <a href="#">Trello TechValidate Survey</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div class="card-left">
+              <p>
+                We used Trello to provide clarity on steps, requirements, and
+                procedures. This was exceptional when communicating with teams
+                that had deep cultural and language differences.
+              </p>
+              <div class="author">
+                <div class="author-line"></div>
+                <strong>Jefferson Scomacao</strong><br />
+                Development Manager at IKEA/PTC
+              </div>
+              <div class="logo">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/free-ptc-1-461807.png"
+                />
+                <span>PTC</span>
+              </div>
+              <div class="read-link"><a href="#">Read the story</a></div>
+            </div>
+            <div class="card-right">
+              <h2>74% say Trello improved communication with teams.</h2>
+              <div class="survey-link">
+                <a href="#">Trello TechValidate Survey</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-dots">
+        <div class="dot active" onclick="goToSlide(0)"></div>
+        <div class="dot" onclick="goToSlide(1)"></div>
+        <div class="dot" onclick="goToSlide(2)"></div>
+      </div>
+    </div>
+   <section class="icons">
+      <img src="./assets/icons.png" alt="">
+    </section>
+    <section class="signup-section">
+      <h2>Get started with Trello today</h2>
+      <form class="signup-form">
+        <input type="email" placeholder="Email" required />
+        <button type="submit">Sign up – it’s free!</button>
+      </form>
+      <p class="privacy-text">
+        By entering my email, I acknowledge the
+        <a href="#">Atlassian Privacy Policy</a>
+      </p>
+    </section>
+  
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <div class="footer-text">
+            <img
+            src="./assets/logo.png"
+            alt="Trello Logo"
+            />
+            <h2>ORGANIVO</h2>
+          </div>
+          <br />
+          <a href="#">Log In</a>
+        </div>
+
+        <div class="footer-section">
+          <h4><a href="#">About Trello</a></h4>
+          <p>What's behind the boards.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4><a href="#">Jobs</a></h4>
+          <p>Learn about open roles on the Trello team.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4><a href="#">Apps</a></h4>
+          <p>Download the Trello App for your Desktop or Mobile devices.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4><a href="#">Contact Us</a></h4>
+          <p>Need anything? Get in touch and we can help.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+          <span>Copyright © 2025 Team ❤️</span>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
